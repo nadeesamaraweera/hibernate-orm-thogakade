@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane fx:id="paneCreateAccount" prefHeight="510.0" prefWidth="800.0" styleClass="pane" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.thogakde.controller.CustomerFormController">
+   <children>
+      <Text layoutX="200.0" layoutY="38.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Customer" wrappingWidth="149.05572509765625">
+         <font>
+            <Font size="32.0" />
+         </font>
+      </Text>
+      <Text fill="#2d3436" layoutX="379.0" layoutY="41.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Manager" wrappingWidth="170.80615234375">
+         <font>
+            <Font size="32.0" />
+         </font>
+      </Text>
+      <Text layoutX="68.0" layoutY="119.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="text-description" text="First Name:">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Text>
+      <Text layoutX="68.0" layoutY="189.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="text-description" text="Last Name:">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Text>
+      <Text layoutX="423.0" layoutY="97.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="text-description" text="Mobile number:">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Text>
+      <Text layoutX="423.0" layoutY="169.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="text-description" text="Address">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Text>
+            <ImageView fitHeight="29.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+            </ImageView>
+      <TextField fx:id="txtfirstname" layoutX="174.0" layoutY="101.0" />
+      <TextField fx:id="txtlastname" layoutX="174.0" layoutY="170.0" />
+      <TextField fx:id="txtTel" layoutX="557.0" layoutY="78.0" />
+      <TextField fx:id="txtaddress" layoutX="557.0" layoutY="148.0" />
+      <Text layoutX="67.0" layoutY="89.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="text-description" text="Id:">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Text>
+      <TextField fx:id="txtId" layoutX="174.0" layoutY="64.0" />
+      <JFXButton layoutX="330.0" layoutY="295.0" onAction="#saveOnAction" prefHeight="42.0" prefWidth="141.0" styleClass="button-with-style" stylesheets="@../../../../../../Desktop/ORM-Management-System/Management-System/src/main/resources/style/button.css" text="Save" />
+      <JFXButton layoutX="668.0" layoutY="297.0" onAction="#UpdateOnAction" prefHeight="42.0" prefWidth="135.0" styleClass="button-with-style" stylesheets="@../../../../../../Desktop/ORM-Management-System/Management-System/src/main/resources/style/button.css" text="Update" />
+      <JFXButton layoutX="523.0" layoutY="295.0" onAction="#deleteOnAaction" prefHeight="42.0" prefWidth="135.0" styleClass="button-with-style" stylesheets="@../../../../../../Desktop/ORM-Management-System/Management-System/src/main/resources/style/button.css" text="Delete" />
+      <Text layoutX="426.0" layoutY="203.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="text-description" text="salary">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Text>
+      <TextField fx:id="txtsalary" layoutX="557.0" layoutY="183.0" />
+
+   </children>
+</AnchorPane>
